@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: customer-success-api
+  namespace: customer-success
+  labels:
+    app: customer-success
+    component: api
+spec:
+  type: ClusterIP
+  selector:
+    app: customer-success
+    component: api
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8000
+    protocol: TCP
+  sessionAffinity: None
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: customer-success-api-headless
+  namespace: customer-success
+  labels:
+    app: customer-success
+    component: api
+spec:
+  type: ClusterIP
+  clusterIP: None
+  selector:
+    app: customer-success
+    component: api
+  ports:
+  - name: http
+    port: 8000
+    targetPort: 8000
+    protocol: TCP

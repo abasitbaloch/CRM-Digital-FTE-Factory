@@ -1,0 +1,175 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-success-worker
+  namespace: customer-success
+  labels:
+    app: customer-success
+    component: worker
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: customer-success
+      component: worker
+  template:
+    metadata:
+      labels:
+        app: customer-success
+        component: worker
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9090"
+        prometheus.io/path: "/metrics"
+    spec:
+      serviceAccountName: customer-success-worker
+      containers:
+      - name: message-processor
+        image: customer-success/worker:latest
+        imagePullPolicy: Always
+        command: ["python", "-m", "production.workers.message_processor"]
+        env:
+        # Load from ConfigMap
+        - name: DB_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: DB_HOST
+        - name: DB_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: DB_PORT
+        - name: DB_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: DB_NAME
+        - name: DB_USER
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: DB_USER
+        - name: KAFKA_BOOTSTRAP_SERVERS
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: KAFKA_BOOTSTRAP_SERVERS
+        - name: KAFKA_CONSUMER_GROUP
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: KAFKA_CONSUMER_GROUP
+        - name: TOPIC_CUSTOMER_MESSAGES
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: TOPIC_CUSTOMER_MESSAGES
+        - name: TOPIC_AGENT_METRICS
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: TOPIC_AGENT_METRICS
+        - name: TOPIC_ESCALATIONS
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: TOPIC_ESCALATIONS
+        - name: AGENT_MODEL
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: AGENT_MODEL
+        - name: AGENT_VERSION
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: AGENT_VERSION
+        - name: LOG_LEVEL
+          valueFrom:
+            configMapKeyRef:
+              name: customer-success-config
+              key: LOG_LEVEL
+
+        # Load from Secrets
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: customer-success-secrets
+              key: DB_PASSWORD
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: customer-success-secrets
+              key: OPENAI_API_KEY
+        - name: TWILIO_ACCOUNT_SID
+          valueFrom:
+            secretKeyRef:
+              name: customer-success-secrets
+              key: TWILIO_ACCOUNT_SID
+        - name: TWILIO_AUTH_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: customer-success-secrets
+              key: TWILIO_AUTH_TOKEN
+
+        # Volume mounts for Gmail service account
+        volumeMounts:
+        - name: gmail-credentials
+          mountPath: /secrets
+          readOnly: true
+
+        # Resource limits
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "1000m"
+          limits:
+            memory: "4Gi"
+            cpu: "4000m"
+
+        # Liveness probe (check if process is running)
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - "ps aux | grep message_processor | grep -v grep"
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 5
+          failureThreshold: 3
+
+        # No readiness probe for workers (they don't serve traffic)
+
+      volumes:
+      - name: gmail-credentials
+        secret:
+          secretName: gmail-service-account
+
+      # Pod scheduling - spread across nodes
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: component
+                  operator: In
+                  values:
+                  - worker
+              topologyKey: kubernetes.io/hostname
+
+      # Graceful shutdown (important for Kafka consumers)
+      terminationGracePeriodSeconds: 60
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: customer-success-worker
+  namespace: customer-success
+  labels:
+    app: customer-success
+    component: worker

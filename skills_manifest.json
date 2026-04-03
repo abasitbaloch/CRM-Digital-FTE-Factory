@@ -1,0 +1,292 @@
+{
+  "version": "1.0.0",
+  "skills": {
+    "knowledge_retrieval": {
+      "metadata": {
+        "name": "knowledge_retrieval",
+        "description": "Search product documentation for relevant information",
+        "category": "knowledge",
+        "priority": "high",
+        "version": "1.0.0",
+        "tags": [
+          "search",
+          "documentation",
+          "knowledge-base"
+        ]
+      },
+      "when_to_use": "Customer asks product questions or needs information",
+      "inputs": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "Search query text from customer message",
+          "required": true
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "required": false
+        },
+        {
+          "name": "conversation_topics",
+          "type": "list[string]",
+          "description": "Topics discussed in conversation for context",
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "name": "results",
+          "type": "list[dict]",
+          "description": "List of relevant documentation snippets with relevance scores"
+        },
+        {
+          "name": "results_count",
+          "type": "integer",
+          "description": "Number of results found"
+        },
+        {
+          "name": "confidence",
+          "type": "float",
+          "description": "Confidence score for top result (0.0-1.0)"
+        }
+      ]
+    },
+    "sentiment_analysis": {
+      "metadata": {
+        "name": "sentiment_analysis",
+        "description": "Analyze customer message sentiment and emotional state",
+        "category": "analysis",
+        "priority": "critical",
+        "version": "1.0.0",
+        "tags": [
+          "sentiment",
+          "emotion",
+          "analysis"
+        ]
+      },
+      "when_to_use": "Every customer message to track emotional state",
+      "inputs": [
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Customer message text to analyze",
+          "required": true
+        },
+        {
+          "name": "previous_sentiment",
+          "type": "string",
+          "description": "Previous sentiment for trend analysis",
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sentiment",
+          "type": "string",
+          "description": "Detected sentiment: neutral, positive, frustrated, angry, confused"
+        },
+        {
+          "name": "confidence",
+          "type": "float",
+          "description": "Confidence score (0.0-1.0)"
+        },
+        {
+          "name": "sentiment_trend",
+          "type": "string",
+          "description": "Trend: improving, stable, deteriorating"
+        },
+        {
+          "name": "indicators",
+          "type": "list[string]",
+          "description": "Key words/phrases that influenced sentiment"
+        }
+      ]
+    },
+    "escalation_decision": {
+      "metadata": {
+        "name": "escalation_decision",
+        "description": "Decide if ticket should be escalated to human support",
+        "category": "decision",
+        "priority": "critical",
+        "version": "1.0.0",
+        "tags": [
+          "escalation",
+          "decision",
+          "routing"
+        ]
+      },
+      "when_to_use": "After generating response, before sending to customer",
+      "inputs": [
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Customer message text",
+          "required": true
+        },
+        {
+          "name": "sentiment",
+          "type": "string",
+          "description": "Current sentiment",
+          "required": true
+        },
+        {
+          "name": "sentiment_trend",
+          "type": "string",
+          "description": "Sentiment trend: improving, stable, deteriorating",
+          "required": false
+        },
+        {
+          "name": "conversation_context",
+          "type": "dict",
+          "description": "Conversation history and context",
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "name": "should_escalate",
+          "type": "boolean",
+          "description": "Whether to escalate to human"
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "description": "Reason for escalation decision"
+        },
+        {
+          "name": "priority",
+          "type": "string",
+          "description": "Escalation priority: critical, high, medium"
+        },
+        {
+          "name": "confidence",
+          "type": "float",
+          "description": "Confidence in decision (0.0-1.0)"
+        }
+      ]
+    },
+    "channel_adaptation": {
+      "metadata": {
+        "name": "channel_adaptation",
+        "description": "Format response appropriately for target channel",
+        "category": "formatting",
+        "priority": "high",
+        "version": "1.0.0",
+        "tags": [
+          "formatting",
+          "channel",
+          "adaptation"
+        ]
+      },
+      "when_to_use": "Before sending any response to customer",
+      "inputs": [
+        {
+          "name": "response_text",
+          "type": "string",
+          "description": "Raw response text to format",
+          "required": true
+        },
+        {
+          "name": "target_channel",
+          "type": "string",
+          "description": "Target channel: gmail, whatsapp, webform",
+          "required": true
+        },
+        {
+          "name": "customer_name",
+          "type": "string",
+          "description": "Customer name for personalization",
+          "required": true
+        },
+        {
+          "name": "is_followup",
+          "type": "boolean",
+          "description": "Whether this is a follow-up message",
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "name": "formatted_response",
+          "type": "string",
+          "description": "Response formatted for target channel"
+        },
+        {
+          "name": "character_count",
+          "type": "integer",
+          "description": "Character count of formatted response"
+        },
+        {
+          "name": "tone",
+          "type": "string",
+          "description": "Applied tone: formal, semi-formal, casual"
+        }
+      ]
+    },
+    "customer_identification": {
+      "metadata": {
+        "name": "customer_identification",
+        "description": "Identify and link customer across channels",
+        "category": "identification",
+        "priority": "critical",
+        "version": "1.0.0",
+        "tags": [
+          "identification",
+          "cross-channel",
+          "customer"
+        ]
+      },
+      "when_to_use": "On every incoming message to identify customer",
+      "inputs": [
+        {
+          "name": "email",
+          "type": "string",
+          "description": "Customer email address",
+          "required": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "Customer phone number",
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "Customer name",
+          "required": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "description": "Current channel",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "name": "customer_id",
+          "type": "string",
+          "description": "Unified customer identifier"
+        },
+        {
+          "name": "is_new_customer",
+          "type": "boolean",
+          "description": "Whether this is a new customer"
+        },
+        {
+          "name": "merged_history",
+          "type": "dict",
+          "description": "Merged conversation history across channels"
+        },
+        {
+          "name": "confidence",
+          "type": "float",
+          "description": "Confidence in identification (0.0-1.0)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python agent.py)",
+      "Bash(python test_agent.py)",
+      "Bash(python demo.py)",
+      "Bash(python demo_memory.py)",
+      "Bash(python demo_memory_auto.py)",
+      "Bash(python demo_mcp.py)",
+      "Bash(python test_mcp.py)",
+      "Bash(python -c ':*)",
+      "Bash(python skills_manifest.py)",
+      "Bash(python skills_integration.py)",
+      "Bash(mkdir:*)"
+    ]
+  }
+}

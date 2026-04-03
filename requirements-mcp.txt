@@ -1,0 +1,7 @@
+# MCP Server Requirements
+
+# Core dependencies
+mcp>=0.9.0
+
+# Already have these from the agent
+# (no additional dependencies needed)

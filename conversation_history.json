@@ -1,0 +1,342 @@
+{
+  "customers": {
+    "sarah@acmecorp.com": {
+      "customer_id": "sarah@acmecorp.com",
+      "name": "Sarah Johnson",
+      "email": "sarah@acmecorp.com",
+      "phone": null,
+      "conversations": [
+        {
+          "timestamp": "2026-04-03T10:00:00Z",
+          "role": "customer",
+          "content": "Hi, I just signed up for the Professional plan and I'm trying to add my team members to a project. I can't seem to find the option. Can you help?",
+          "channel": "gmail",
+          "sentiment": "neutral",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T10:00:00Z",
+          "role": "agent",
+          "content": "Hi Sarah,\n\nThanks for following up!\n\nHere's how to add team members to your project:\n\n1. Open your project in TaskFlow Pro\n2. Click the \"Team\" icon in the top right corner\n3. Click \"Add Members\"\n4. Enter email addresses or select from your workspace members\n5. Choose their permission level (Viewer, Editor, or Admin)\n6. Click \"Send Invitations\"\n\nYour team members will receive an email invitation and can access the project immediately.\n\nIs there anything else I can help you with?\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T10:15:00Z",
+          "role": "customer",
+          "content": "Thanks! That worked. Can I also customize their permissions? I want some members to only view, not edit.",
+          "channel": "gmail",
+          "sentiment": "positive",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T10:15:00Z",
+          "role": "agent",
+          "content": "Hi Sarah,\n\nThanks for following up!\n\nBased on our documentation, here's what might help:\n\nTaskFlow Pro Documentation\n\n### Getting Started\n\n#### Account Setup\n1. Sign up at app.techcorp.com/signup\n2. Verify your email address\n3. Create your first workspace\n4. Invite team members via email or shareable link\n5. Choose your subscription tier\n\n#### Creating Your First Project\n1. Click \"New Pr...\n\nIs there anything else I can help you with?\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": false
+        }
+      ],
+      "topics_discussed": [
+        "team",
+        "features"
+      ],
+      "resolution_status": "solved",
+      "current_sentiment": "positive",
+      "sentiment_history": [
+        [
+          "2026-04-03T10:15:00Z",
+          "positive"
+        ]
+      ],
+      "original_channel": "gmail",
+      "channels_used": [
+        "gmail"
+      ],
+      "channel_switches": 0,
+      "first_contact": "2026-04-03T10:00:00Z",
+      "last_contact": "2026-04-03T10:15:00Z",
+      "total_interactions": 2,
+      "escalation_count": 0
+    },
+    "+1-555-0123": {
+      "customer_id": "+1-555-0123",
+      "name": "Mike Chen",
+      "email": "",
+      "phone": "+1-555-0123",
+      "conversations": [
+        {
+          "timestamp": "2026-04-03T11:00:00Z",
+          "role": "customer",
+          "content": "App keeps crashing when uploading files. iPhone 13.",
+          "channel": "whatsapp",
+          "sentiment": "frustrated",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T11:00:00Z",
+          "role": "agent",
+          "content": "Hi Mike! Try these steps to fix app crashes: 1. Update to the latest version from the App Store 2. Restart your device 3. Clear app cache (Settings > Apps > TaskFlow Pro > Clear Cache) 4. Reinstall the app ...",
+          "channel": "whatsapp",
+          "sentiment": null,
+          "escalated": false
+        }
+      ],
+      "topics_discussed": [
+        "technical",
+        "mobile"
+      ],
+      "resolution_status": "solved",
+      "current_sentiment": "frustrated",
+      "sentiment_history": [
+        [
+          "2026-04-03T11:00:00Z",
+          "frustrated"
+        ]
+      ],
+      "original_channel": "whatsapp",
+      "channels_used": [
+        "whatsapp"
+      ],
+      "channel_switches": 0,
+      "first_contact": "2026-04-03T11:00:00Z",
+      "last_contact": "2026-04-03T11:00:00Z",
+      "total_interactions": 1,
+      "escalation_count": 0
+    },
+    "mike.chen@techstartup.com": {
+      "customer_id": "mike.chen@techstartup.com",
+      "name": "Mike Chen",
+      "email": "mike.chen@techstartup.com",
+      "phone": "+1-555-0123",
+      "conversations": [
+        {
+          "timestamp": "2026-04-03T11:30:00Z",
+          "role": "customer",
+          "content": "Hi, I messaged on WhatsApp earlier about app crashes. I tried the steps you suggested but it's still crashing. It only happens when I try to upload files larger than 50MB. Can you help?",
+          "channel": "gmail",
+          "sentiment": "frustrated",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T11:30:00Z",
+          "role": "agent",
+          "content": "Hi Mike,\n\nThank you for reaching out. I understand this is an important matter that requires specialized attention.\n\nI've escalated your inquiry to our support team. A specialist will respond within the appropriate timeframe via email with a solution.\n\nWe appreciate your patience.\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": true
+        }
+      ],
+      "topics_discussed": [
+        "technical",
+        "mobile"
+      ],
+      "resolution_status": "escalated",
+      "current_sentiment": "frustrated",
+      "sentiment_history": [
+        [
+          "2026-04-03T11:30:00Z",
+          "frustrated"
+        ]
+      ],
+      "original_channel": "gmail",
+      "channels_used": [
+        "gmail"
+      ],
+      "channel_switches": 0,
+      "first_contact": "2026-04-03T11:30:00Z",
+      "last_contact": "2026-04-03T11:30:00Z",
+      "total_interactions": 1,
+      "escalation_count": 1
+    },
+    "emma@designstudio.io": {
+      "customer_id": "emma@designstudio.io",
+      "name": "Emma Rodriguez",
+      "email": "emma@designstudio.io",
+      "phone": null,
+      "conversations": [
+        {
+          "timestamp": "2026-04-03T14:00:00Z",
+          "role": "customer",
+          "content": "I was charged $288 but I only have 10 users. I thought the Starter plan was $12/user/month which should be $120. Can you explain this charge?",
+          "channel": "webform",
+          "sentiment": "confused",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T14:00:00Z",
+          "role": "agent",
+          "content": "Hi Emma,\n\nThanks for reaching out. I've escalated your inquiry to our support team who can best assist with this matter.\n\nA specialist will respond shortly via email.\n\nBest,\nTechCorp Support",
+          "channel": "webform",
+          "sentiment": null,
+          "escalated": true
+        },
+        {
+          "timestamp": "2026-04-03T16:00:00Z",
+          "role": "customer",
+          "content": "I submitted a question about my billing 2 hours ago and haven't heard back. This is urgent - I need to understand why I was overcharged.",
+          "channel": "gmail",
+          "sentiment": "frustrated",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T16:00:00Z",
+          "role": "agent",
+          "content": "Hi Emma,\n\nThank you for reaching out. I understand this is an important matter that requires specialized attention.\n\nI've escalated your inquiry to our support team. A specialist will respond within the appropriate timeframe via email with a solution.\n\nWe appreciate your patience.\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": true
+        }
+      ],
+      "topics_discussed": [
+        "billing",
+        "team"
+      ],
+      "resolution_status": "escalated",
+      "current_sentiment": "frustrated",
+      "sentiment_history": [
+        [
+          "2026-04-03T14:00:00Z",
+          "confused"
+        ],
+        [
+          "2026-04-03T16:00:00Z",
+          "frustrated"
+        ]
+      ],
+      "original_channel": "webform",
+      "channels_used": [
+        "webform",
+        "gmail"
+      ],
+      "channel_switches": 1,
+      "first_contact": "2026-04-03T14:00:00Z",
+      "last_contact": "2026-04-03T16:00:00Z",
+      "total_interactions": 2,
+      "escalation_count": 2
+    },
+    "david@marketingpro.com": {
+      "customer_id": "david@marketingpro.com",
+      "name": "David Kim",
+      "email": "david@marketingpro.com",
+      "phone": null,
+      "conversations": [
+        {
+          "timestamp": "2026-04-03T15:00:00Z",
+          "role": "customer",
+          "content": "Hi, we're evaluating TaskFlow Pro. Can you tell me if the mobile app works offline?",
+          "channel": "gmail",
+          "sentiment": "neutral",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T15:00:00Z",
+          "role": "agent",
+          "content": "Hi David,\n\nThanks for reaching out! I'd be happy to help.\n\nYes! The mobile app supports offline mode. You can work on tasks without internet, and changes will sync automatically when you reconnect. Note that the browser version requires an internet connection.\n\nIs there anything else I can help you with?\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T15:10:00Z",
+          "role": "customer",
+          "content": "Great! Also, can we integrate with Slack? We use it for all team communication.",
+          "channel": "gmail",
+          "sentiment": "positive",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T15:10:00Z",
+          "role": "agent",
+          "content": "Hi David,\n\nThanks for following up!\n\nBased on our documentation, here's what might help:\n\nTaskFlow Pro Documentation\n\n### Getting Started\n\n#### Account Setup\n1. Sign up at app.techcorp.com/signup\n2. Verify your email address\n3. Create your first workspace\n4. Invite team members via email or shareable link\n5. Choose your subscription tier\n\n#### Creating Your First Project\n1. Click \"New Pr...\n\nIs there anything else I can help you with?\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T15:20:00Z",
+          "role": "customer",
+          "content": "Perfect. One more thing - we're a team of 150 people. Do you have enterprise pricing with SSO?",
+          "channel": "gmail",
+          "sentiment": "positive",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-03T15:20:00Z",
+          "role": "agent",
+          "content": "Hi David,\n\nThank you for reaching out. I understand this is an important matter that requires specialized attention.\n\nI've escalated your inquiry to our support team. A specialist will respond within the appropriate timeframe via email with a solution.\n\nWe appreciate your patience.\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": true
+        }
+      ],
+      "topics_discussed": [
+        "mobile",
+        "integration",
+        "team",
+        "enterprise"
+      ],
+      "resolution_status": "escalated",
+      "current_sentiment": "positive",
+      "sentiment_history": [
+        [
+          "2026-04-03T15:10:00Z",
+          "positive"
+        ]
+      ],
+      "original_channel": "gmail",
+      "channels_used": [
+        "gmail"
+      ],
+      "channel_switches": 0,
+      "first_contact": "2026-04-03T15:00:00Z",
+      "last_contact": "2026-04-03T15:20:00Z",
+      "total_interactions": 3,
+      "escalation_count": 1
+    },
+    "sarah@example.com": {
+      "customer_id": "sarah@example.com",
+      "name": "sarah",
+      "email": "sarah@example.com",
+      "phone": null,
+      "conversations": [
+        {
+          "timestamp": "2026-04-02T22:19:46.387389",
+          "role": "customer",
+          "content": "I can't add team members to my project. Where is the option?",
+          "channel": "gmail",
+          "sentiment": "neutral",
+          "escalated": false
+        },
+        {
+          "timestamp": "2026-04-02T22:19:46.387389",
+          "role": "agent",
+          "content": "Hi sarah,\n\nThanks for reaching out! I'd be happy to help.\n\nHere's how to add team members to your project:\n\n1. Open your project in TaskFlow Pro\n2. Click the \"Team\" icon in the top right corner\n3. Click \"Add Members\"\n4. Enter email addresses or select from your workspace members\n5. Choose their permission level (Viewer, Editor, or Admin)\n6. Click \"Send Invitations\"\n\nYour team members will receive an email invitation and can access the project immediately.\n\nIs there anything else I can help you with?\n\nBest regards,\nTechCorp Support Team",
+          "channel": "gmail",
+          "sentiment": null,
+          "escalated": false
+        }
+      ],
+      "topics_discussed": [
+        "team"
+      ],
+      "resolution_status": "solved",
+      "current_sentiment": "neutral",
+      "sentiment_history": [],
+      "original_channel": "gmail",
+      "channels_used": [
+        "gmail"
+      ],
+      "channel_switches": 0,
+      "first_contact": "2026-04-02T22:19:46.387389",
+      "last_contact": "2026-04-02T22:19:46.387389",
+      "total_interactions": 1,
+      "escalation_count": 0
+    }
+  },
+  "phone_to_email": {
+    "+1-555-0123": "mike.chen@techstartup.com"
+  }
+}
