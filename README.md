@@ -1,22 +1,18 @@
 <div align="center">
 
-<h1>
-  <img src="https://raw.githubusercontent.com/your-org/assets/main/logo.svg" alt="Digital FTE" width="80" height="80" />
-  <br/>
-  DIGITAL FTE
-</h1>
+<h1>🤖 DIGITAL FTE</h1>
 
 <p align="center">
-  <strong>Your First True AI Employee for Customer Success</strong><br/>
-  Production-ready • Multi-channel • Infinitely Scalable
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=700&size=28&pause=1000&color=2E86C1&center=true&vCenter=true&width=600&lines=24%2F7+Omnichannel+Digital+FTE;Autonomous+Customer+Success;Powered+by+OpenAI+Agents+SDK;Kafka+%7C+PostgreSQL+%7C+Kubernetes" alt="Typing SVG" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/your-org/customer-success-platform/actions"><img src="https://img.shields.io/github/actions/workflow/status/your-org/customer-success-platform/ci.yml?style=for-the-badge&logo=github&label=BUILD" alt="Build Status" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-success?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/PYTHON-3.11+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python Version" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/OPENAI-GPT--4-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI SDK" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/KUBERNETES-1.24+-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="FastAPI" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/kubernetes-326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" /></a>
 </p>
 
 <p align="center">
@@ -29,25 +25,21 @@
 
 </div>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🎯 The Mission
+<h2 align="center">🎯 The Mission</h2>
 
 > **The Problem:** SaaS companies spend $50-100 per support ticket, with 24-48 hour response times and zero continuity across channels. Support teams drown in 500+ daily tickets while 60% are repetitive questions already answered in documentation.
 
 > **Our Solution:** A true Digital Employee that works 24/7 across email, WhatsApp, and web forms—understanding context, taking action, and learning continuously. **Result: 80% tier-1 automation, <5s response times, $2M+ annual savings.**
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🤖 The Digital Employee
+<h2 align="center">🤖 The Digital Employee</h2>
 
 <div align="center">
 
@@ -98,13 +90,11 @@ Empathetic • Context-Aware • Action-Oriented • Channel-Adaptive
 
 </div>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🚀 The Agent Maturity Model
+<h2 align="center">🚀 The Agent Maturity Model</h2>
 
 Our journey from prototype to production-ready Digital Employee:
 
@@ -133,21 +123,19 @@ Our journey from prototype to production-ready Digital Employee:
 
 **Production Proof:** *47,382 messages processed in 24 hours with 99.97% uptime*
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 📱 Omnichannel Integration
+<h2 align="center">📱 Omnichannel Integration</h2>
 
 <div align="center">
 
 <table>
 <tr>
-<th width="33%" align="center">📧 EMAIL</th>
-<th width="33%" align="center">💬 WHATSAPP</th>
-<th width="33%" align="center">🌐 WEB FORM</th>
+<th width="33%" align="center"><h3>📧</h3><strong>EMAIL</strong></th>
+<th width="33%" align="center"><h3>💬</h3><strong>WHATSAPP</strong></th>
+<th width="33%" align="center"><h3>🌐</h3><strong>WEB FORM</strong></th>
 </tr>
 <tr>
 <td align="center">
@@ -208,13 +196,11 @@ Rate Limiting<br/>
 
 </div>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🏗️ Architecture
+<h2 align="center">🏗️ Architecture</h2>
 
 <div align="center">
 
@@ -253,7 +239,7 @@ Rate Limiting<br/>
 </div>
 
 <details>
-<summary><strong>🔍 Deep Dive: Kafka Architecture</strong></summary>
+<summary><strong>🔍 Deep Dive: Kafka Event Streaming</strong></summary>
 
 <br/>
 
@@ -291,7 +277,7 @@ ticket-events        → Ticket lifecycle (3 partitions)
 </details>
 
 <details>
-<summary><strong>🗄️ Deep Dive: PostgreSQL Schema</strong></summary>
+<summary><strong>🗄️ Deep Dive: Database Schema</strong></summary>
 
 <br/>
 
@@ -330,13 +316,11 @@ agent_metrics          → Performance analytics (hourly/daily aggregates)
 
 </details>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 📊 Validated Performance
+<h2 align="center">📊 Validated Performance</h2>
 
 <div align="center">
 
@@ -399,13 +383,11 @@ Target: >4.5
 
 </div>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## ⚡ Quick Start
+<h2 align="center">⚡ Quick Start</h2>
 
 <div align="center">
 
@@ -413,14 +395,17 @@ Target: >4.5
 
 </div>
 
-<samp>
-
 ```bash
-# Clone the repository
+# ============================================
+# STEP 1: Clone the repository
+# ============================================
 git clone https://github.com/your-org/customer-success-platform.git
 cd customer-success-platform
 
-# One-command setup (checks prerequisites, installs deps, starts services)
+# ============================================
+# STEP 2: One-command setup
+# Checks prerequisites, installs deps, starts services
+# ============================================
 ./setup.sh
 
 # ✅ PostgreSQL with pgvector
@@ -428,19 +413,18 @@ cd customer-success-platform
 # ✅ API server on port 8000
 # ✅ Worker processing messages
 
-# Visit the interactive API docs
-open http://localhost:8000/docs
+# ============================================
+# STEP 3: Visit the interactive API docs
+# ============================================
+# Open http://localhost:8000/docs in your browser
 ```
-
-</samp>
 
 <br/>
 
 **Test the API:**
 
-<samp>
-
 ```bash
+# Send a test support request
 curl -X POST http://localhost:8000/support/submit \
   -H "Content-Type: application/json" \
   -d '{
@@ -452,13 +436,9 @@ curl -X POST http://localhost:8000/support/submit \
   }'
 ```
 
-</samp>
-
 <br/>
 
-**Response:**
-
-<samp>
+**Expected Response:**
 
 ```json
 {
@@ -470,15 +450,11 @@ curl -X POST http://localhost:8000/support/submit \
 }
 ```
 
-</samp>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<br/>
-
-## ☸️ Production Deployment
+<h2 align="center">☸️ Production Deployment</h2>
 
 <div align="center">
 
@@ -486,13 +462,15 @@ curl -X POST http://localhost:8000/support/submit \
 
 </div>
 
-<samp>
-
 ```bash
+# ============================================
 # One-command production deployment
+# ============================================
 make k8s-deploy
 
+# ============================================
 # Verify deployment
+# ============================================
 kubectl get pods -n customer-success
 
 # Expected output:
@@ -503,8 +481,6 @@ kubectl get pods -n customer-success
 # customer-success-worker-6c8d7b4-jkl78  1/1     Running   0          2m
 # customer-success-worker-6c8d7b4-mno90  1/1     Running   0          2m
 ```
-
-</samp>
 
 <details>
 <summary><strong>📋 Prerequisites</strong></summary>
@@ -579,24 +555,26 @@ Worker Pods:
 
 </details>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🧪 Testing & Validation
-
-<samp>
+<h2 align="center">🧪 Testing & Validation</h2>
 
 ```bash
+# ============================================
 # Run complete test suite
+# ============================================
 make test
 
+# ============================================
 # E2E tests (25+ scenarios)
+# ============================================
 make test-e2e
 
+# ============================================
 # Load tests (Locust)
+# ============================================
 make test-load
 
 # Results from 100 concurrent users:
@@ -607,15 +585,11 @@ make test-load
 # ✅ Requests/sec: 78.9
 ```
 
-</samp>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<br/>
-
-## 📚 Documentation
+<h2 align="center">📚 Documentation</h2>
 
 <div align="center">
 
@@ -629,13 +603,11 @@ make test-load
 
 </div>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🔒 Security & Compliance
+<h2 align="center">🔒 Security & Compliance</h2>
 
 <div align="center">
 
@@ -678,13 +650,11 @@ Access controls
 
 </div>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🎯 Roadmap
+<h2 align="center">🎯 Roadmap</h2>
 
 <table>
 <tr>
@@ -720,13 +690,11 @@ Access controls
 </tr>
 </table>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
-## 🙏 Built With
+<h2 align="center">🙏 Built With</h2>
 
 <div align="center">
 
@@ -774,15 +742,13 @@ Access controls
 
 </div>
 
-<br/>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
 <div align="center">
 
-## 💬 Support & Community
+<h2>💬 Support & Community</h2>
 
 <br/>
 
@@ -802,7 +768,7 @@ Access controls
 
 <br/>
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 
 <br/>
 
